@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 
 function Person(props) {
-  // état local pour l'âge
   const [age, setAge] = useState(props.age);
-
   const augmenterAge = () => {
     setAge(age + 1);
   };
@@ -11,8 +9,10 @@ function Person(props) {
   return (
     <div style={{ border: "1px solid #ccc", margin: "10px", padding: "10px" }}>
       <h2>{props.name}</h2>
-      <p>Âge : {age} ans</p>
-      <button onClick={augmenterAge}>Augmenter âge</button>
+      <p>age : {age} ans</p>
+    <input>type:button onClick={augmenterAge}+ age</input>
+
+      <button onClick={augmenterAge}>+ age</button>
     </div>
   );
 }
